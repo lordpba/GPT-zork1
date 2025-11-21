@@ -40,7 +40,7 @@ def game_turn_with_image(message, history, text_prov, img_prov, txt_model, txt_k
     )
     return response, image_data
 
-with gr.Blocks(title="Zork GPT Playground", theme=gr.themes.Soft()) as demo:
+with gr.Blocks(title="Zork GPT Playground") as demo:
     gr.Markdown("# 🏰 Zork GPT Playground")
     gr.Markdown("Play Zork enhanced by LLMs. Choose your provider and model below.")
     
@@ -82,7 +82,7 @@ with gr.Blocks(title="Zork GPT Playground", theme=gr.themes.Soft()) as demo:
             scene_image = gr.Image(label="Current Scene", interactive=False, height=300)
             
             # Chat Interface
-            chatbot = gr.Chatbot(height=500, type="messages")
+            chatbot = gr.Chatbot(height=500)
             msg = gr.Textbox(label="Your Command", placeholder="open mailbox, go north...")
             clear = gr.Button("Clear")
 
