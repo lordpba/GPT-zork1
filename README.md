@@ -16,15 +16,27 @@ Generate images of your adventure using **DALL-E 3** or **Stable Diffusion**.
 
 1. **Install Ollama**: [Download here](https://ollama.com/) and run `ollama serve`.
 2. **Pull a Model**: `ollama pull llama3`
-3. **Install Dependencies**:
+3. **Run the App**:
+   
+   **Option A: Quick Start (Linux/Mac)**
    ```bash
-   pip install -r requirements.txt
+   ./run.sh
    ```
-4. **Run the App**:
+
+   **Option B: Manual Setup**
    ```bash
+   # Create virtual environment
+   python3 -m venv venv
+   source venv/bin/activate
+   
+   # Install dependencies
+   pip install -r requirements.txt
+   
+   # Run
    python app.py
    ```
-5. Open your browser at `http://localhost:7860`.
+
+4. Open your browser at `http://localhost:7860`.
 
 ## How to Run on Colab
 Click the "Open in Colab" badge above. It will install everything and give you a public link to play.
