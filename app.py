@@ -64,7 +64,7 @@ with gr.Blocks(title="Zork GPT Playground", theme=gr.themes.Soft()) as demo:
             
             # Image Provider Settings
             image_provider = gr.Dropdown(
-                choices=["None", "OpenAI", "Gemini", "Local (SD)"], 
+                choices=["None", "OpenAI", "Gemini"], 
                 value="None", 
                 label="Image Provider"
             )

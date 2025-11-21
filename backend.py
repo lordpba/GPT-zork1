@@ -12,8 +12,7 @@ class GameEngine:
         }
         self.image_providers = {
             "OpenAI": image_gen.OpenAIImageProvider(),
-            "Gemini": image_gen.GeminiImageProvider(),
-            "Local (SD)": image_gen.LocalStableDiffusionProvider()
+            "Gemini": image_gen.GeminiImageProvider()
         }
         
         self.default_system_prompt = """You are the Dungeon Master for a text adventure game based on Zork 1. 
