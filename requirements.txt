@@ -1,0 +1,11 @@
+gradio
+openai
+google-generativeai
+anthropic
+groq
+requests
+pillow
+diffusers
+torch
+transformers
+accelerate
